@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.main_header {
+	background-image: url("../img/intro.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 800px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.main_nav {
+	position: relative;
+	background-color: #fff;
+	height: 56px;
+}
+.main_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.main_nav li {
+	width: 20%;
+	text-align: center;
+}
+.main_nav a{
+	text-decoration: none;
+}
+.main_nav .menu_left {
+	float: left;
+}
+.main_nav .menu_right {
+	float: right;
+}
+.logo {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
+}
