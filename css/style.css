@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.intro {
+	background-image: url("../img/intro.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 508px;
+}
+.intro:after {
+	content: url(../img/mask.svg);
+}
+
+.main_nav {
+	position: relative;
+	background-color: #fff;
+	height: 56px;
+}
+.main_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.main_nav li {
+	width: 20%;
+	text-align: center;
+}
+.main_nav a{
+	text-decoration: none;
+}
+.main_nav li:nth-child(n){
+	float: left;
+}
+.main_nav li:nth-child(n+3) {
+	float: right;
+}
+.logo {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
+}
