@@ -6,119 +6,129 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  	<!-- Заголовок с фоновой картинкой intro -->
-		<header class="main_header container">
-			<nav class="main_nav">
-				<ul>
-					<li class="menu_left"><a href="#">Информация</a></li>
-					<li class="menu_left"><a href="#">Фото и видео</a></li>
-					<li class="menu_right"><a href="hotels.html">Гостиницы</a></li>
-					<li class="menu_right"><a href="#">Карта штата</a></li>
-				</ul>
-			</nav>
-			<!-- Текст на картинке вставляется как текст, или как элемент фоновой картинки? -->
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo.png" alt="Sedona" width="137" height="70">
-				</a>
+  	<div class="container">
+	  	<!-- Заголовок с фоновой картинкой intro -->
+			<header class="main_header">
+				<!-- Навигация -->
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Фото и видео</a></li>
+						<li><a href="hotels.html">Гостиницы</a></li>
+						<li><a href="#">Карта штата</a></li>
+					</ul>
+				</nav>
+				<!-- Логотип -->
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="Sedona" width="137" height="70">
+					</a>
+				</div>
+			</header>
+			<!-- Картинка с текстом и треугольниками -->
+			<div class="intro">
+				<!-- Не могу сообразить, как зафиксировать маску по вертикали. svg файл создавал самостоятельно, может там ошибка? -->
+				<img src="img/intro_text.png" alt="Welcome to the Sedona!">
 			</div>
-			<div class="mask"></div>
-		</header>
-		<!-- Причины -->
-		<div class="reasons container">
-			<h2 class="reasons_title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
-	</h2>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-			<section class="reasons_blue reasons_left">
-				<h2>Настоящий городок</h2>
-				<p class="reasons_number">— №1 —</p>
-				<p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-			</section>
-			<div class="reasons_img reasons_right">
-				<img src="img/right_img.jpg" alt="Седона" width="800" height="256">
-			</div>
-			<section class="reasons_extra">
-				<div class="reasons_extra_img live"></div>
-				<h2>Жилье</h2>
-				<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-			</section>
-			<section class="reasons_extra">
-				<div class="reasons_extra_img food"></div>
-				<h2>Еда</h2>
-				<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-			</section>
-			<section class="reasons_extra">
-				<div class="reasons_extra_img souvenirs"></div>
-				<h2>Сувениры</h2>
-				<p>Не только китайского, но и местного производства!</p>
-			</section>
-			<div class="reasons_img reasons_left">
-				<img src="img/left_img.jpg" alt="Мост дьявола" width="800" height="256">
-			</div>
-			<section class="reasons_blue reasons_right">
-				<h2>Там есть<br>мост дьявола</h2>
-				<p class="reasons_number">— №2 —</p>
-				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-			</section>
-			<section class="reasons_white">
-				<h2>Небольшая<br>площадь</h2>
-				<p class="reasons_number">— №3 —</p>
-				<p>ВСЕ достопримечательности находятся очень близко</p>
-			</section>
-			<section class="reasons_white">
-				<h2>Красивая<br>дорога</h2>
-				<p class="reasons_number">— №4 —</p>
-				<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-			</section>
-			<section class="reasons_white">
-				<h2>Мало<br>туристов</h2>
-				<p class="reasons_number">— №5 —</p>
-				<p>Большинство едет в гранд каньон и толпится там</p>
-			</section>
-		</div>
-		<!-- Заинтересовались? -->
-		<section class="interest container">
-			<h2>Заинтересовались?</h2>
-			<p></p>
-			<div class="search_title"><h2>Поиск гостиницы в Седоне</h2></div>
-		</section>
-		<!-- Блок с формой и футером -->
-		<div class="form_footer container">
-			<form action="http://echo.htmlacademy.ru" class="hotel_search_form">
-				<label>Дата заезда:<input name="date_in" type="date"></label>
-				<label>Дата выезда:<input name="date_out" type="date"></label>
-				<div class="plus_minus">
-					<label for="adults">Взрослые:</label>
-					<button type="button">-</button>
-					<input type="number" name="adults" id="adults">
-					<button type="button">+</button>
-				</div>
-				<div class="plus_minus">
-					<label for="children">Дети:</label>
-					<button type="button">-</button>
-					<input type="number" name="children" id="children">
-					<button type="button">+</button>
-				</div>
-				<button type="submit" class="form_btn">Найти</button>
-			</form>
-			
-			<footer class="main_footer">
-				<div class="footer_tag">
-					<b>#visitsedona</b>
-				</div>
-				<div class="footer_social">
-					<a href="#" class="social_btn social_btn_tw">Вконтакте</a>
-					<a href="#" class="social_btn social_btn_fb">Фейсбук</a>
-					<a href="#" class="social_btn social_btn_yt">Инстаграм</a>
-				</div>
-				<div class="footer_copyright">
-					<p>website by</p>
-					<a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" alt="HTMLAcademy" width="113" height="39"></a>
-				</div>
-			</footer>
-		</div>
 
+			<!-- Причины -->
+			<div class="reasons">
+				<h1 class="reasons_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				
+				<div class="reasons_block reasons_blue reasons_left">
+					<h2>Настоящий городок</h2>
+					<p class="reasons_number">— №1 —</p>
+					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
 
+				<div class="reasons_img reasons_right">
+					<img src="img/right_img.jpg" alt="Седона" width="800" height="256">
+				</div>
+				<div class="reasons_block reasons_extra reasons_extra_img_live">
+					<h2>Жилье</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+				</div>
+
+				<div class="reasons_block reasons_extra reasons_extra_img_food">
+					<h2>Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div class="reasons_block reasons_extra reasons_extra_img_souvenirs">
+					<h2>Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+
+				<div class="reasons_img reasons_left">
+					<img src="img/left_img.jpg" alt="Мост дьявола" width="800" height="256">
+				</div>
+				<div class="reasons_block reasons_blue reasons_right">
+					<h2>Там есть мост дьявола</h2>
+					<p class="reasons_number">— №2 —</p>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+
+				<div class="reasons_block reasons_white">
+					<h2>Небольшая площадь</h2>
+					<p class="reasons_number">— №3 —</p>
+					<p>ВСЕ достопримечательности находятся очень близко</p>
+				</div>
+
+				<div class="reasons_block reasons_white">
+					<h2>Красивая дорога</h2>
+					<p class="reasons_number">— №4 —</p>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+
+				<div class="reasons_block reasons_white">
+					<h2>Мало туристов</h2>
+					<p class="reasons_number">— №5 —</p>
+					<p>Большинство едет в гранд каньон и толпится там</p>
+				</div>
+
+			</div>
+			<!-- Заинтересовались? -->
+			<div class="interest">
+				<h2>Заинтересовались?</h2>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<button class="search_btn" type="button">Поиск гостиницы в Седоне</button>
+			</div>
+			<!-- Блок с формой и футером -->
+			<div class="form_footer">
+				<form action="http://echo.htmlacademy.ru" class="hotel_search_form">
+					<label>Дата заезда:<input name="date_in" type="date"></label>
+					<label>Дата выезда:<input name="date_out" type="date"></label>
+					<div class="plus_minus">
+						<label for="adults">Взрослые:</label>
+						<button type="button">-</button>
+						<input type="number" name="adults" id="adults">
+						<button type="button">+</button>
+					</div>
+					<div class="plus_minus">
+						<label for="children">Дети:</label>
+						<button type="button">-</button>
+						<input type="number" name="children" id="children">
+						<button type="button">+</button>
+					</div>
+					<button type="submit" class="form_btn">Найти</button>
+				</form>
+				
+				<footer class="main_footer">
+					<div class="footer_tag">
+						<div>#visitsedona</div>
+					</div>
+					<div class="footer_social">
+						<a href="#" class="social_btn social_btn_tw">Вконтакте</a>
+						<a href="#" class="social_btn social_btn_fb">Фейсбук</a>
+						<a href="#" class="social_btn social_btn_yt">Инстаграм</a>
+					</div>
+					<div class="footer_copyright">
+						<p>website by</p>
+						<a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" alt="HTMLAcademy" width="113" height="39"></a>
+					</div>
+				</footer>
+			</div>
+		</div>
   </body>
 </html>
 

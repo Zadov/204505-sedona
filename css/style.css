@@ -2,32 +2,20 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.main_header {
-	background-image: url("../img/intro.jpg");
-	background-repeat: no-repeat;
-	background-position: center top;
-	height: 800px;
-}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-/*.mask {
-	position: absolute;
-	bottom: 236px;
-	background-image: url(../img/mask_8.png);
+.intro {
+	background-image: url("../img/intro.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}*/
-.mask {
-	height: 57px;
-	width: 100%;
-	background-image: url(../img/mask.svg);
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-					background-size: cover;
-					
+	background-position: center top;
+	height: 508px;
 }
+.intro:after {
+	content: url(../img/mask.svg);
+}
+
 .main_nav {
 	position: relative;
 	background-color: #fff;
@@ -45,10 +33,10 @@ body {
 .main_nav a{
 	text-decoration: none;
 }
-.main_nav .menu_left {
+.main_nav li:nth-child(n){
 	float: left;
 }
-.main_nav .menu_right {
+.main_nav li:nth-child(n+3) {
 	float: right;
 }
 .logo {
