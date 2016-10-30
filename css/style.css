@@ -1,4 +1,5 @@
-body {
+
+body, button {
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', Helvetica, sans-serif;
@@ -7,15 +8,30 @@ body {
 	text-transform: uppercase;
 	color: #000;
 }
+body {
+	background-color: #f2f2f2;
+}
+button:focus {
+    outline: none;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+/*header*/
+
 .intro {
 	background-image: url("../img/intro.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	height: 508px;
+	text-align: center;
+}
+.intro img{
+	margin-top: 76px;
+	margin-bottom: 20px;
 }
 .intro:after {
 	content: url(../img/mask.svg);
@@ -33,10 +49,13 @@ body {
 }
 .main_nav li {
 	width: 20%;
+	padding-top: 18px;
 	text-align: center;
+	font-weight: bold;
 }
 .main_nav a{
 	text-decoration: none;
+	color: #000;
 }
 .main_nav li:nth-child(n){
 	float: left;
@@ -50,4 +69,68 @@ body {
 	top: 0;
 	left: 50%;
 	margin-left: -69px;
+}
+
+/*причины*/
+
+.reasons {
+	margin-top: 59px;
+	text-align: center;
+}
+.reasons_title{
+	width: 530px;
+	margin:0 auto;
+}
+.reasons_title h1{
+	font-size: 21px;
+	font-weight: bold;
+}
+.reasons_title p {
+	margin-top: 30px;
+}
+.reasons_blocks {
+	margin-top: 55px;
+	-ms-display: flex;
+			display: flex;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+}
+.reasons_block {
+	width: 33.3333%;
+	height: 256px;
+	padding: 55px;
+	box-sizing: border-box;
+}
+.reasons_img {
+	width: 66.6666%;
+	height: 256px;
+}
+.reasons_blue {
+	background-color: #81b3d2;
+	color: #fff;
+}
+.reasons_white {
+	background-color: #eeeeee;
+}
+.reasons_extra {
+	height: 330px;
+}
+
+
+.interest {
+	text-align: center;
+}
+
+
+
+.search_btn {
+	width: 568px;
+	height: 86px;
+	background-color: #766357;
+	border: none;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 21px;
+	font-weight: bold;
+	cursor: pointer;
 }
