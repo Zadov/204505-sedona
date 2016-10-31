@@ -46,11 +46,11 @@
 					</div>
 
 					<div class="reasons_img reasons_right">
-						<img src="img/right_img.jpg" alt="Седона" width="800" height="256">
+						<img src="img/right_img.jpg" alt="Седона"><!--  width="800" height="256" -->
 					</div>
 					<div class="reasons_block reasons_extra reasons_extra_img_live">
 						<h2>Жилье</h2>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 
 					<div class="reasons_block reasons_extra reasons_extra_img_food">
@@ -63,7 +63,7 @@
 					</div>
 
 					<div class="reasons_img reasons_left">
-						<img src="img/left_img.jpg" alt="Мост дьявола" width="800" height="256">
+						<img src="img/left_img.jpg" alt="Мост дьявола"><!-- width="800" height="256" -->
 					</div>
 					<div class="reasons_block reasons_blue reasons_right">
 						<h2>Там есть мост дьявола</h2>
@@ -94,24 +94,26 @@
 			<!-- Заинтересовались? -->
 			<div class="interest">
 				<h2>Заинтересовались?</h2>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<p>Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<button class="search_btn" type="button">Поиск гостиницы в Седоне</button>
 			</div>
 			<!-- Блок с формой и футером -->
 			<div class="form_footer">
 				<form action="http://echo.htmlacademy.ru" class="hotel_search_form">
-					<label>Дата заезда:<input name="date_in" type="date"></label>
-					<label>Дата выезда:<input name="date_out" type="date"></label>
+					<label for="date_in">Дата заезда:</label>
+					<input name="date_in" id="date_in" type="date">
+					<label for="date_out">Дата выезда:</label>
+					<input name="date_out" id="date_out" type="date">
 					<div class="plus_minus">
 						<label for="adults">Взрослые:</label>
 						<button type="button">-</button>
-						<input type="number" name="adults" id="adults">
+						<input type="text" name="adults" id="adults">
 						<button type="button">+</button>
 					</div>
 					<div class="plus_minus">
 						<label for="children">Дети:</label>
 						<button type="button">-</button>
-						<input type="number" name="children" id="children">
+						<input type="text" name="children" id="children">
 						<button type="button">+</button>
 					</div>
 					<button type="submit" class="form_btn">Найти</button>
@@ -122,13 +124,15 @@
 						<div>#visitsedona</div>
 					</div>
 					<div class="footer_social">
-						<a href="#" class="social_btn social_btn_tw">Вконтакте</a>
-						<a href="#" class="social_btn social_btn_fb">Фейсбук</a>
-						<a href="#" class="social_btn social_btn_yt">Инстаграм</a>
+						<a href="#" class="social_btn social_btn_tw">t</a>
+						<a href="#" class="social_btn social_btn_fb">f</a>
+						<a href="#" class="social_btn social_btn_yt">y</a>
 					</div>
 					<div class="footer_copyright">
 						<p>website by</p>
-						<a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" alt="HTMLAcademy" width="113" height="39"></a>
+						<a href="https://htmlacademy.ru">
+							<img src="img/htmlacademy.png" alt="HTMLAcademy">
+						</a>
 					</div>
 				</footer>
 			</div>
