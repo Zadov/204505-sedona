@@ -1,5 +1,5 @@
 
-body, button {
+body, button, input {
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', Helvetica, sans-serif;
@@ -24,6 +24,12 @@ input:focus {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /*header*/
 
 .intro {
@@ -44,7 +50,6 @@ input:focus {
 .main_nav {
 	position: relative;
 	background-color: #fff;
-	height: 56px;
 }
 .main_nav ul {
 	margin: 0;
@@ -53,6 +58,7 @@ input:focus {
 }
 .main_nav li {
 	padding-top: 18px;
+	padding-bottom: 20px;
 	width: 20%;
 	text-align: center;
 	font-weight: bold;
@@ -83,14 +89,12 @@ input:focus {
 }
 .reasons_title{
 	margin: 0 auto;
-	width: 530px;
+	max-width: 530px;
 }
 .reasons_title h1{
 	font-size: 21px;
 	font-weight: bold;
-}
-.reasons_title p {
-	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .reasons_blocks {
 	margin-top: 55px;
@@ -102,13 +106,12 @@ input:focus {
 .reasons_block {
 	padding: 0 48px;
 	width: 33.333%;
-	height: 256px;
 	box-sizing: border-box;
 	line-height: 21px;
 }
 .reasons_block h2{
 	margin: 0 auto;
-	width: 151px;
+	max-width: 151px;
 }
 .reasons_number {
 	margin-top: 25px;
@@ -124,12 +127,13 @@ input:focus {
 	color: #fff;
 }
 .reasons_white {
-	padding: 47px 62px 0 62px;
+	padding: 47px 62px 45px;
 	background-color: #eeeeee;
 }
 .reasons_extra {
-	padding-top: 57px;
-	height: 330px;
+	margin-top: 57px;
+	margin-bottom: 68px;
+/*	height: 330px;*/
 }
 .reasons_extra:before {
 	content: "";
@@ -165,7 +169,7 @@ input:focus {
 	font-size: 30px;
 }
 .search_btn {
-	margin: 33px auto 0 auto;
+	margin: 33px auto 0;
 	width: 568px;
 	height: 86px;
 	background-color: #766357;
@@ -181,7 +185,6 @@ input:focus {
 .hotel_search_form {
 	margin: 0 auto;
 	width: 568px;
-	height: 395px;
 	box-sizing: border-box;
 	background-color: #fff;
 	padding: 55px;
@@ -238,7 +241,8 @@ input:focus {
 			display: flex;
 	margin-top: 78px;
 	background-color: rgba(255,255,255,0.9);
-	height: 120px;
+	padding: 36px 0;
+/*	height: 120px;*/
 }
 .main_footer div {
 	margin: auto;
@@ -262,5 +266,119 @@ input:focus {
 }
 .footer_copyright p {
 	display: inline;
+}
 
+/*hotels*/
+
+	/*filter*/
+
+.filter {
+	padding: 27px 70px 33px; /*снизу 32 пикселя от чекбокса*/
+	background-image: url(../img/hotel_intro.jpg);
+	background-position: center;
+	box-sizing: border-box;
+	color: #fff;
+}
+.filter fieldset {
+	box-sizing: border-box;
+	border: none;
+	padding: 0;
+}
+.filter legend {
+	margin-bottom: 28px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.filter_infrastructure {
+	float: left;
+	margin-right: 110px;
+}
+.filter_property_type {
+	float: left;
+}
+.filter_item {
+	margin-bottom: 23px;
+}
+.filter_item:last-child {
+	margin-bottom: 0;
+}
+.filter_price {
+	float: right;
+	width: 328px;
+	box-sizing: border-box;
+}
+.filter_price legend {
+	margin-bottom: 11px;
+}
+.filter_price_in {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+.filter svg {
+	float: left;
+}
+.filter_price input {
+	width: 156px;
+	height: 32px;
+	float: left;	/*чтобы убрать пробел между инпутами (без обнуления шрифта)*/
+	border: none;
+	background: none;
+	color: #fff;
+	text-align: center;
+}
+.filter_price_line {
+	margin-bottom: 23px;
+	display: flex;
+}
+.pointer {
+	width: 21px;
+	height: 21px;
+	background-color: #fff;
+	border-radius: 11px;
+	cursor: pointer;
+}
+.filter_price button {
+	display: block;
+	width: 137px;
+	height: 36px;
+	margin: 0 auto;
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+}
+
+/*found*/
+
+.found_header {
+	display: flex;
+	padding: 29px 72px 30px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.found_accont_title {
+	width: 164px;
+	margin: 0;
+	font-size: 21px;
+}
+.found_sorting {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 12px;
+}
+.found_sorting li {
+	float: left;
+	margin-right: 38px;
+}
+
+/*временно*/
+.filter_up,
+.filter_down {
+	float: right;
+	display: block;
+	width: 11px;
+	height: 10px;
+	background-color: #000;
 }
