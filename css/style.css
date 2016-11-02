@@ -17,6 +17,7 @@ button:focus {
 input:focus {
     outline: none;
 }
+h1,h2,h3,h4,h5 {margin: 0;}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -67,7 +68,7 @@ input:focus {
 	text-decoration: none;
 	color: #000;
 }
-.main_nav li:nth-child(n){
+.main_nav li {
 	float: left;
 }
 .main_nav li:nth-child(n+3) {
@@ -183,7 +184,7 @@ input:focus {
 	background-image: url(../img/map.jpg);
 }
 .hotel_search_form {
-	margin: 0 auto;
+	margin: 0 auto 78px;
 	width: 568px;
 	box-sizing: border-box;
 	background-color: #fff;
@@ -239,7 +240,6 @@ input:focus {
 .main_footer {
 	-ms-display: flex;
 			display: flex;
-	margin-top: 78px;
 	background-color: rgba(255,255,255,0.9);
 	padding: 36px 0;
 /*	height: 120px;*/
@@ -320,7 +320,7 @@ input:focus {
 	float: left;
 }
 .filter_price input {
-	width: 156px;
+	width: 156px;	/*как сделать сжимающиеся инпуты?*/
 	height: 32px;
 	float: left;	/*чтобы убрать пробел между инпутами (без обнуления шрифта)*/
 	border: none;
@@ -359,7 +359,6 @@ input:focus {
 }
 .found_accont_title {
 	width: 164px;
-	margin: 0;
 	font-size: 21px;
 }
 .found_sorting {
@@ -367,18 +366,76 @@ input:focus {
 	padding: 0;
 	list-style-type: none;
 	font-size: 12px;
+	flex-grow: 1;
 }
 .found_sorting li {
 	float: left;
 	margin-right: 38px;
 }
+.found_sorting li:nth-child(n+5) {
+	float: right;
+	margin-right: 0;
+	margin-left: 12px;
+}
 
 /*временно*/
 .filter_up,
 .filter_down {
-	float: right;
 	display: block;
 	width: 11px;
 	height: 10px;
 	background-color: #000;
+}
+
+/*Результаты поиска*/
+
+.found_body_block {
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.found_body_block > img {
+	float: left;
+	margin-right: 30px;
+}
+.found_body_hotel {
+	float: left;
+}
+.hotel_name {
+	margin-top: -6px;
+	margin-bottom: 8px;
+}
+.found_body_hotel_price {
+	margin-bottom: 16px;
+}
+.found_body_hotel_book a {
+	display: inline-block;
+	height: 27px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+/*размеры кнопок стоит шириной-высотой задавать, или паддингами?*/
+.found_btn_about {
+	background-color: #81b3d2;
+	width: 110px;
+}
+.found_btn_get {
+	background-color: #766357;
+	width: 142px;
+}
+.found_body_rating {
+	float: right;
+}
+
+/*временно*/
+.found_stars {
+	height: 17px;
+	width: 17px;
+	background-color: #000;
+	margin-bottom: 47px;
+}
+
+.found_rating {
+	background-color: #f2f2f2;
 }
