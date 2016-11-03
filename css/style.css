@@ -1,3 +1,13 @@
+body, button, input  {
+	font-family: 'PT Sans', Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000;
+}
+body {
+	background-color: #f2f2f2;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -33,8 +43,6 @@
 	background-color: #fff;
 }
 .main_nav ul {
-	margin: 0;
-	padding: 0;
 	list-style-type: none;
 }
 .main_nav li {
@@ -305,7 +313,8 @@
 	margin-bottom: 11px;
 }
 .filter_price_in {
-	display: flex;
+	-ms-display: flex;
+			display: flex;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	border: 2px solid #fff;
@@ -319,7 +328,8 @@
 .filter_price input {
 	max-width: 156px;	/*как сделать сжимающиеся инпуты?*/
 	height: 32px;
-	flex-grow: 1;
+	-ms-flex-grow: 1;
+			flex-grow: 1;
 	border: none;
 	background: none;
 	color: #fff;
@@ -327,7 +337,8 @@
 }
 .filter_price_line {
 	margin-bottom: 23px;
-	display: flex;
+	-ms-display: flex;
+			display: flex;
 }
 .pointer {
 	width: 21px;
@@ -350,8 +361,11 @@
 /*found*/
 
 .found_header {
-	display: flex;
+	-ms-display: flex;
+			display: flex;
 	padding: 29px 6% 30px;
+	-ms-align-items: baseline;
+			align-items: baseline;
 	border-bottom: 1px solid #e5e5e5;
 }
 .found_accont_title {
@@ -359,20 +373,22 @@
 	font-size: 21px;
 }
 .found_sorting {
-	margin: 0;
-	padding: 0;
 	list-style-type: none;
 	font-size: 12px;
-	flex-grow: 1;
+	-ms-flex-grow: 1;
+			flex-grow: 1;
 }
 .found_sorting li {
 	float: left;
-	margin-right: 38px;
+	padding: 0 16px;
+}
+.found_sorting li:first-child {
+	padding-left: 0;
+	width: 82px;
 }
 .found_sorting li:nth-child(n+5) {
 	float: right;
-	margin-right: 0;
-	margin-left: 12px;
+	padding: 0 0 0 13px;
 }
 
 /*временно*/
@@ -397,24 +413,26 @@
 }
 .found_body_hotel {
 	float: left;
-	width: 258px;
 }
 .hotel_name {
 	margin-top: -6px;
 	margin-bottom: 8px;
 }
-/*.found_body_hotel_about,
-.found_body_hotel_book {
-	display: flex;
-	flex-direction: column;
+.found_body_hotel_block {
+	-ms-display: flex;
+			display: flex;
 }
 .found_body_hotel_about {
 	width: 110px;
-	margin-bottom: 21px;
+	margin-right: 6px;
 }
 .found_body_hotel_book {
 	width: 142px;
-}*/
+}
+.found_body_hotel span {
+	display: block;
+	margin-bottom: 20px;
+}
 .found_body_hotel a {
 	padding: 5px 17px;
 	color: #fff;
