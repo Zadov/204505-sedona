@@ -204,8 +204,30 @@ input:focus {
 	background-color: #f2f2f2;
 }
 .hotel_search_form > input {
+	box-sizing: border-box;
 	width: 346px;
 	margin-bottom: 29px;
+	padding-left: 13px;
+}
+.hotel_search_form > input:hover {
+	background-color: #ebebeb;
+}
+.hotel_search_form > input:focus {
+	background: none;
+	border: 2px solid #e5e5e5;
+	padding-left: 11px;
+}
+.hotel_search_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+.hotel_search_form input::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+.hotel_search_form input:-ms-input-placeholder { /* IE 10+ */
+  color: #000000;
+}
+.hotel_search_form input:-moz-placeholder { /* Firefox 18- */
+  color: #000000;
 }
 .plus_minus {
 	display: inline-block;
@@ -218,8 +240,19 @@ input:focus {
 	padding: 0;
 	font-size: 14px;
 }
+.plus_minus > input {
+	position: relative;
+	top: 1px;
+	text-align: center;
+}
 .plus_minus > button {
 	color: #a9a9a9;
+}
+.plus_minus > button:hover {
+	color: #000000;
+}
+.plus_minus > button:active {
+	color: #81b3d2;
 }
 .plus_minus > label {
 	font-size: 14px;
@@ -234,6 +267,13 @@ input:focus {
 	font-size: 21px;
 	font-weight: bold;
 	cursor: pointer;
+}
+.form_btn:hover {
+	background-color: #669ec0;
+}
+.form_btn:active {
+	background-color: #5496bd;
+	color: #94b9d2;
 }
 
 /*footer*/
@@ -264,6 +304,15 @@ input:focus {
 	background-color: #81b3d2;
 	box-sizing: border-box;
 	padding-top: 15px;
+}
+.social_btn:hover {
+	background-color: #669ec0;
+}
+.social_btn:active {
+	background-color: #5496bd;
+}
+.social_btn:active:before {
+	opacity: 0.4;
 }
 .social_btn:before {
 	content: "";
@@ -351,17 +400,42 @@ input:focus {
 	color: #fff;
 	text-align: center;
 }
+.filter_price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+.filter_price input::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+.filter_price input:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+.filter_price input:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
 .filter_price_line {
 	margin-bottom: 23px;
+	margin-left: 10px;
 	-ms-display: flex;
 			display: flex;
 }
 .pointer {
-	width: 21px;
-	height: 21px;
+	width: 20px;
+	height: 20px;
 	background-color: #fff;
 	border-radius: 11px;
 	cursor: pointer;
+}
+.pointer:before {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 3px;
+	background-color: #ababab;
+	margin: 8px auto;
+}
+.pointer:hover:before {
+	background-color: #1c4f80;
 }
 .filter_price button {
 	display: block;
@@ -372,6 +446,10 @@ input:focus {
 	border: 2px solid #fff;
 	border-radius: 3px;
 	color: #fff;
+}
+.filter_price button:hover {
+	background-color: #ffffff;
+	color: #000000;
 }
 
 /*found*/
@@ -411,14 +489,24 @@ input:focus {
 	float: right;
 	padding: 0 0 0 13px;
 }
+.filter_up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #cccccc;
 
-/*временно*/
-.filter_up,
+}
 .filter_down {
-	display: block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+/*	display: block;
 	width: 11px;
 	height: 10px;
-	background-color: #000;
+	background-color: #000;*/
 }
 
 /*Результаты поиска*/
@@ -439,6 +527,17 @@ input:focus {
 	margin-top: -5px;
 	margin-bottom: 7px;
 	line-height: 26px;
+	color: #000000;
+}
+.hotel_name a {
+	color: #000000;
+	text-decoration: none;
+}
+.hotel_name a:hover {
+	color: #81b3d2;
+}
+.hotel_name a:active {
+	color: #cacaca;
 }
 .found_body_hotel_block {
 	-ms-display: flex;
@@ -451,21 +550,35 @@ input:focus {
 .found_body_hotel_book {
 	width: 142px;
 }
-.found_body_hotel span {
+.found_body_hotel_block span {
 	display: block;
 	margin-bottom: 18px;
 }
-.found_body_hotel a {
+.found_body_hotel_block a {
 	padding: 5px 17px 4px;
-	color: #fff;
+	color: #ffffff;
 	font-weight: bold;
 	text-decoration: none;
 }
 .found_btn_about {
 	background-color: #81b3d2;
 }
+.found_btn_about:hover {
+	background-color: #669ec0;
+}
+.found_btn_about:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
 .found_btn_get {
 	background-color: #766357;
+}
+.found_btn_get:hover {
+	background-color: #604e43;
+}
+.found_btn_get:active {
+	background-color: #503e33;
+	color: #928a85;
 }
 .found_body_rating {
 	float: right;
@@ -475,7 +588,7 @@ input:focus {
 .found_stars {
 	height: 17px;
 	width: 17px;
-	background-color: #000;
+	background-color: #81b3d2;
 	margin-bottom: 42px;
 }
 
