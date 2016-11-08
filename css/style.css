@@ -22,7 +22,7 @@ input:focus {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.clearfix:after {
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -41,7 +41,7 @@ input:focus {
 	margin-top: 76px;
 	margin-bottom: 17px;
 }
-.intro:after {
+.intro::after {
 	content: url(../img/mask.svg);
 }
 
@@ -141,13 +141,13 @@ input:focus {
 	width: 75px;
 	height: 75px;
 }
-.reasons_extra_img_live:before {
+.reasons_extra_img_live::before {
 	background-position: 0 0;
 }
-.reasons_extra_img_food:before {
+.reasons_extra_img_food::before {
 	background-position: -75px 0;
 }
-.reasons_extra_img_souvenirs:before {
+.reasons_extra_img_souvenirs::before {
 	background-position: -150px 0;
 }
 .reasons_extra h2{
@@ -311,10 +311,10 @@ input:focus {
 .social_btn:active {
 	background-color: #5496bd;
 }
-.social_btn:active:before {
+.social_btn:active::before {
 	opacity: 0.4;
 }
-.social_btn:before {
+.social_btn::before {
 	content: "";
 	margin: 0 auto;
 	display: block;
@@ -322,13 +322,13 @@ input:focus {
 	height: 18px;
 	background: url(../img/sprite.png) no-repeat;
 }
-.social_btn.tw:before {
+.social_btn.tw::before {
 	background-position: -60px -75px;
 }
-.social_btn.fb:before {
+.social_btn.fb::before {
 	background-position: -80px -75px;
 }
-.social_btn.yt:before {
+.social_btn.yt::before {
 	background-position: -100px -75px;
 }
 .footer_copyright p {
@@ -425,7 +425,7 @@ input:focus {
 	border-radius: 11px;
 	cursor: pointer;
 }
-.pointer:before {
+.pointer::before {
 	content: "";
 	display: block;
 	width: 4px;
@@ -434,7 +434,7 @@ input:focus {
 	background-color: #ababab;
 	margin: 8px auto;
 }
-.pointer:hover:before {
+.pointer:hover::before {
 	background-color: #1c4f80;
 }
 .filter_price button {
