@@ -1,4 +1,4 @@
-body, button, input  {
+body, button, input {
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', Helvetica, sans-serif;
@@ -125,19 +125,19 @@ input:focus {
 	color: #fff;
 }
 .reasons_white {
-	height: 256px;
+	min-height: 256px;
 	padding: 47px 62px 0;
 	background-color: #eeeeee;
 }
 .reasons_extra {
 	padding-top: 57px;
-	height: 330px;
+	min-height: 330px;
 }
 .reasons_extra:before {
 	content: "";
 	display: block;
 	margin: 0 auto;
-	background-image: url(../img/reasons_extra_sprite.png);
+	background: url(../img/sprite.png) no-repeat;
 	width: 75px;
 	height: 75px;
 }
@@ -320,16 +320,16 @@ input:focus {
 	display: block;
 	width: 20px;
 	height: 18px;
-	background: url(../img/social.png) no-repeat;
+	background: url(../img/sprite.png) no-repeat;
 }
 .social_btn.tw:before {
-	background-position: 0 0;
+	background-position: -60px -75px;
 }
 .social_btn.fb:before {
-	background-position: -20px 0;
+	background-position: -80px -75px;
 }
 .social_btn.yt:before {
-	background-position: -40px 0;
+	background-position: -100px -75px;
 }
 .footer_copyright p {
 	display: inline;
@@ -481,15 +481,49 @@ input:focus {
 	float: left;
 	padding: 0 16px;
 }
+.found_sorting a {
+	color: #cacaca;
+	text-decoration: none;
+	border-bottom: dotted 1px #81b3d2;
+}
+.found_sorting a:hover {
+	color: #81b3d2;
+}
+.found_sorting a:active {
+	color: #000000;
+	border-bottom: none;
+}
+.found_sorting a.active {
+	color: #81b3d2;
+	border-bottom: none;
+}
 .found_sorting li:first-child {
 	padding-left: 0;
 	width: 82px;
 }
 .found_sorting li:nth-child(n+5) {
 	float: right;
-	padding: 0 0 0 13px;
+	width: 24px;
+	padding: 0;
+	text-align: right;
 }
-.filter_up {
+.found_sorting .filter_up,
+.found_sorting .filter_down {
+	border-bottom: none;
+}
+.filter_up:hover polygon,
+.filter_down:hover polygon {
+	fill: #000000;
+}
+.filter_up:active polygon,
+.filter_down:active polygon {
+	fill: #81b3d2;
+}
+.filter_up.active_sort polygon,
+.filter_down.active_sort polygon {
+	fill: #81b3d2;
+}
+/*.filter_up {
 	width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -503,11 +537,7 @@ input:focus {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 10px solid #cccccc;
-/*	display: block;
-	width: 11px;
-	height: 10px;
-	background-color: #000;*/
-}
+}*/
 
 /*Результаты поиска*/
 
