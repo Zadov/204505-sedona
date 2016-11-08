@@ -5,7 +5,7 @@ body, button, input {
 	font-size: 14px;
 	font-weight: normal;
 	text-transform: uppercase;
-	color: #000;
+	color: #000000;
 	line-height: 21px;
 }
 body {
@@ -18,7 +18,7 @@ input:focus {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: #ffffff;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -47,7 +47,7 @@ input:focus {
 
 .main_nav {
 	position: relative;
-	background-color: #fff;
+	background-color: #ffffff;
 }
 .main_nav ul {
 	padding: 0;
@@ -68,7 +68,7 @@ input:focus {
 }
 .main_nav a{
 	text-decoration: none;
-	color: #000;
+	color: #000000;
 }
 .logo {
 	margin-left: -69px;
@@ -122,7 +122,7 @@ input:focus {
 .reasons_blue {
 	padding-top: 54px;
 	background-color: #81b3d2;
-	color: #fff;
+	color: #ffffff;
 }
 .reasons_white {
 	min-height: 256px;
@@ -176,7 +176,7 @@ input:focus {
 	height: 86px;
 	background-color: #766357;
 	border: none;
-	color: #fff;
+	color: #ffffff;
 	font-size: 21px;
 	font-weight: bold;
 	cursor: pointer;
@@ -188,7 +188,7 @@ input:focus {
 	margin: 0 auto 78px;
 	width: 568px;
 	box-sizing: border-box;
-	background-color: #fff;
+	background-color: #ffffff;
 	padding: 55px;
 	font-weight: bold;
 	box-shadow: 0 7px 15px rgba(0,0,0,0.15);
@@ -263,7 +263,7 @@ input:focus {
 	height: 58px;
 	background-color: #81b3d2;
 	border: none;
-	color: #fff;
+	color: #ffffff;
 	font-size: 21px;
 	font-weight: bold;
 	cursor: pointer;
@@ -344,7 +344,7 @@ input:focus {
 	background-image: url(../img/hotel_intro.jpg);
 	background-position: center;
 	box-sizing: border-box;
-	color: #fff;
+	color: #ffffff;
 }
 .filter fieldset {
 	margin: 0;
@@ -382,7 +382,7 @@ input:focus {
 			display: flex;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	border: 2px solid #fff;
+	border: 2px solid #ffffff;
 	border-radius: 3px;
 }
 
@@ -397,7 +397,7 @@ input:focus {
 			flex-grow: 1;
 	border: none;
 	background: none;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 }
 .filter_price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -421,7 +421,7 @@ input:focus {
 .pointer {
 	width: 20px;
 	height: 20px;
-	background-color: #fff;
+	background-color: #ffffff;
 	border-radius: 11px;
 	cursor: pointer;
 }
@@ -443,9 +443,9 @@ input:focus {
 	height: 36px;
 	margin: 0 auto;
 	background: none;
-	border: 2px solid #fff;
+	border: 2px solid #ffffff;
 	border-radius: 3px;
-	color: #fff;
+	color: #ffffff;
 }
 .filter_price button:hover {
 	background-color: #ffffff;
