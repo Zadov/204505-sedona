@@ -17,11 +17,11 @@ input:focus {
 }
 .container {
 	max-width: 1200px;
+	min-width: 768px;
 	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
 .clearfix::after {
 	content: "";
 	display: table;
@@ -29,7 +29,9 @@ input:focus {
 }
 
 /*header*/
-
+.main_header {
+	position: relative;
+}
 .intro {
 	position: relative;
 	background-image: url("../img/intro.jpg");
@@ -46,9 +48,10 @@ input:focus {
 	bottom: 0;
 	left: 0;
 	content: "";
-	background: url(../img/mask.png) no-repeat center bottom;
-	-webkit-background-size: 100% 57px;
-					background-size: 100% 57px;
+	background-image: url(../img/mask.png);
+	background-repeat:  no-repeat;
+	background-position: bottom;
+	background-size: 100% auto;
 	width: 100%;
 	height: 57px;
 }
@@ -63,7 +66,6 @@ input:focus {
 	list-style-type: none;
 }
 .main_nav li {
-	/*float: left;*/
 	padding-top: 14px;
 	padding-bottom: 16px;
 	width: 20%;
@@ -77,9 +79,6 @@ input:focus {
 .main_nav li:nth-child(n+3) {
 	float: right;
 }
-/*.main_nav li:nth-child(2) {
-	margin-right: 20%;
-}*/
 .main_nav a{
 	text-decoration: none;
 	color: #000000;
@@ -172,6 +171,7 @@ input:focus {
 
 /*form*/
 
+/*заголовок*/
 .interest {
 	margin-top: 56px;
 	text-align: center;
@@ -199,7 +199,9 @@ input:focus {
 .form_footer {
 	background-image: url(../img/map.jpg);
 }
+/*сама форма*/
 .hotel_search_form {
+	position: relative;
 	margin: 0 auto 78px;
 	width: 568px;
 	box-sizing: border-box;
@@ -218,20 +220,26 @@ input:focus {
 	border: none;
 	background-color: #f2f2f2;
 }
+.hotel_search_form input {
+	box-sizing: border-box;
+}
 .hotel_search_form > input {
 	box-sizing: border-box;
 	width: 346px;
 	margin-bottom: 29px;
 	padding-left: 13px;
 }
-.hotel_search_form > input:hover {
+.hotel_search_form input:hover {
 	background-color: #ebebeb;
 }
-.hotel_search_form > input:focus {
+.hotel_search_form input:focus {
 	background: none;
 	border: 2px solid #e5e5e5;
+}
+.hotel_search_form > input:focus {
 	padding-left: 11px;
 }
+
 .hotel_search_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000000;
 }
@@ -251,13 +259,13 @@ input:focus {
 }
 .plus_minus > input,
 .plus_minus > button {
+	display: inline-block;
+	vertical-align: top;
 	width: 38px;
 	padding: 0;
 	font-size: 14px;
 }
 .plus_minus > input {
-	position: relative;
-	top: 1px;
 	text-align: center;
 }
 .plus_minus > button {
@@ -301,11 +309,11 @@ input:focus {
 /*	height: 120px;*/
 }
 .main_footer div {
-	margin: auto;
 	width: 33.333333%;
 	text-align: center;
 }
 .footer_tag {
+
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -347,7 +355,9 @@ input:focus {
 	background-position: -100px -75px;
 }
 .footer_copyright p {
-	display: inline;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
 }
 
 /*hotels*/
@@ -384,6 +394,7 @@ input:focus {
 .filter_item:last-child {
 	margin-bottom: 0;
 }
+/*фильтр цены*/
 .filter_price {
 	float: right;
 	width: 31%;
@@ -393,27 +404,28 @@ input:focus {
 	margin-bottom: 11px;
 }
 .filter_price_in {
-	-ms-display: flex;
-			display: flex;
+	height: 36px;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 3px;
 }
-
-/*временное решение*/
-.filter svg {
-	float: left;
+.filter_price_in label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
 }
+
 .filter_price input {
-	max-width: 156px;	/*как сделать сжимающиеся инпуты?*/
-	height: 32px;
-	-ms-flex-grow: 1;
-			flex-grow: 1;
+	width: 50px;
+	margin: 0;
+	padding-left: 65px;
 	border: none;
 	background: none;
 	color: #ffffff;
-	text-align: center;
 }
 .filter_price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ffffff;
@@ -472,9 +484,9 @@ input:focus {
 .found_header {
 	-ms-display: flex;
 			display: flex;
-	padding: 29px 6% 30px;
-	-ms-align-items: baseline;
-			align-items: baseline;
+	-ms-align-items: center;
+			align-items: center;
+	padding: 30px 6%;
 	border-bottom: 1px solid #e5e5e5;
 }
 .found_accont_title {
