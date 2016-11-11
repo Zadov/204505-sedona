@@ -84,6 +84,21 @@ input:focus {
 	text-decoration: none;
 	color: #000000;
 }
+.main_nav a:hover {
+	color: #81b3d2;
+}
+.main_nav a:active {
+	color: #cecece;
+}
+.main_nav .active_mnu {
+	color: #766357;
+}
+.main_nav .active_mnu:hover {
+	color: #604e43;
+}
+.main_nav .active_mnu:active {
+	color: #dbd8d5;
+}
 .logo {
 	transform: translateX(-50%);
 	text-align: center;
@@ -220,6 +235,7 @@ input:focus {
 	height: 38px;
 	border: none;
 	background-color: #f2f2f2;
+	cursor: pointer;
 }
 .hotel_search_form input {
 	box-sizing: border-box;
@@ -307,17 +323,16 @@ input:focus {
 			display: flex;
 	background-color: rgba(255,255,255,0.9);
 	padding: 36px 0;
-/*	height: 120px;*/
 }
 .main_footer div {
 	width: 33.333333%;
 	text-align: center;
 }
 .footer_tag {
-
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
+	align-self: center;
 }
 .social_btn {
 	display: inline-block;
@@ -360,6 +375,22 @@ input:focus {
 	margin-right: 5px;
 	vertical-align: top;
 }
+.htmlacademy_logo {
+	display: inline-block;
+	width: 113px;
+	height: 39px;
+}
+.htmlacademy_logo:hover {
+	background: url(../img/HTMLAcademyHVR.png) no-repeat 50% 50%;
+}
+.htmlacademy_logo:active {
+	background: url(../img/HTMLAcademyDown.png) no-repeat 50% 50%;
+}
+.htmlacademy_logo:hover img,
+.htmlacademy_logo:active img {
+	background: transparent;
+	visibility: hidden;
+}
 
 /*hotels*/
 
@@ -396,6 +427,10 @@ input:focus {
 	margin-bottom: 0;
 }
 /*фильтр цены*/
+.filter input[type="checkbox"],
+.filter label {
+	cursor: pointer;
+}
 .filter_price {
 	float: right;
 	width: 31%;
@@ -431,7 +466,6 @@ input:focus {
 	font-size: 14px;
 	line-height: 30px;
 	vertical-align: top;
-	cursor: pointer;
 }
 
 .filter_price input {
@@ -500,6 +534,7 @@ input:focus {
 	border: 2px solid #ffffff;
 	border-radius: 3px;
 	color: #ffffff;
+	cursor: pointer;
 }
 .filter_price button:hover {
 	background-color: #ffffff;
@@ -667,15 +702,21 @@ input:focus {
 .found_body_rating {
 	float: right;
 }
-
-/*временно*/
 .found_stars {
-	height: 17px;
-	width: 17px;
-	margin: 0 0 46px auto;
-	background-color: #81b3d2;
+	text-align: right;
+	margin-bottom: 35px;
+	font-size: 0;
 }
-
+.star {
+	display: inline-block;
+	background: url(../img/star.svg);
+	margin-left: 7px;
+	width: 17px;
+	height: 17px;
+}
+.star:first-child {
+	margin: 0;
+}
 .found_rating {
 	padding: 3px 14px;
 	background-color: #f2f2f2;
