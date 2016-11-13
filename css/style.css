@@ -225,9 +225,9 @@ input:focus {
 	padding: 55px;
 	font-weight: bold;
 	box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+	text-align: right;
 }
 .hotel_search_form input {
-	font-size: 14px;
 	font-weight: bold;
 }
 .hotel_search_form input,
@@ -240,12 +240,6 @@ input:focus {
 .hotel_search_form input {
 	box-sizing: border-box;
 }
-.hotel_search_form > input {
-	box-sizing: border-box;
-	width: 346px;
-	margin-bottom: 29px;
-	padding-left: 13px;
-}
 .hotel_search_form input:hover {
 	background-color: #ebebeb;
 }
@@ -253,10 +247,14 @@ input:focus {
 	background: none;
 	border: 2px solid #e5e5e5;
 }
-.hotel_search_form > input:focus {
+.date_field input:focus {
 	padding-left: 11px;
 }
-
+.date_field input {
+	width: 346px;
+	margin-bottom: 29px;
+	padding-left: 13px;
+}
 .hotel_search_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000000;
 }
@@ -269,6 +267,21 @@ input:focus {
 .hotel_search_form input:-moz-placeholder { /* Firefox 18- */
   color: #000000;
 }
+
+.date_field {
+	display: inline-block;
+	position: relative;
+}
+.date_icon {
+	position: absolute;
+	top: 14px;
+	right: 10px;
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+}
+
 .plus_minus {
 	display: inline-block;
 	width: 49%;
@@ -382,10 +395,10 @@ input:focus {
 	height: 39px;
 }
 .htmlacademy_logo:hover {
-	background: url(../img/HTMLAcademyHVR.png) no-repeat 50% 50%;
+	background: url(../img/html_academy_hvr.png) no-repeat 50% 50%;
 }
 .htmlacademy_logo:active {
-	background: url(../img/HTMLAcademyDown.png) no-repeat 50% 50%;
+	background: url(../img/html_academy_down.png) no-repeat 50% 50%;
 }
 .htmlacademy_logo:hover img,
 .htmlacademy_logo:active img {
@@ -398,7 +411,7 @@ input:focus {
 	/*filter*/
 
 .filter {
-	padding: 27px 6% 32px;
+	padding: 27px 6% 33px;
 	background-image: url(../img/hotel_intro.jpg);
 	background-position: center;
 	box-sizing: border-box;
@@ -412,7 +425,7 @@ input:focus {
 .filter legend {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 28px;
+	margin-bottom: 25px;
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -422,20 +435,39 @@ input:focus {
 	width: 24%
 }
 .filter_item {
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 }
 .filter_item:last-child {
 	margin-bottom: 0;
 }
-/*фильтр цены*/
-.filter input[type="checkbox"],
 .filter label {
 	cursor: pointer;
 }
+.filter input[type="checkbox"] {
+	display: none;
+}
+.filter_item label{
+	position: relative;
+	left: 40px;
+}
+.filter_item label::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 22px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -35px -75px;
+	left: -40px;
+}
+.filter_item input[type="checkbox"]:checked + label::before {
+	background-position: -5px -75px;
+}
+/*фильтр цены*/
 .filter_price {
 	float: right;
 	width: 31%;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 .filter_price legend {
 	margin-bottom: 10px;
