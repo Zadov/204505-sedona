@@ -377,6 +377,7 @@ input:focus {
 }
 .htmlacademy_logo {
 	display: inline-block;
+	vertical-align: middle;
 	width: 113px;
 	height: 39px;
 }
