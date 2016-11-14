@@ -213,12 +213,16 @@ input:focus {
 	cursor: pointer;
 }
 .form_footer {
-	background-image: url(../img/map.jpg);
+	position: relative;
+	min-height: 500px;
+	/*background-image: url(../img/map.jpg);*/
 }
 /*сама форма*/
 .hotel_search_form {
-	position: relative;
-	margin: 0 auto 78px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 568px;
 	box-sizing: border-box;
 	background-color: #ffffff;
@@ -345,12 +349,17 @@ input:focus {
 	background-color: #5496bd;
 	color: #94b9d2;
 }
-
+.hotel_search_form_hide {
+	display: none;
+}
 /*footer*/
 
 .main_footer {
+	position: absolute;
 	-ms-display: flex;
 			display: flex;
+	bottom: 0;
+	width: 100%;
 	background-color: rgba(255,255,255,0.9);
 	padding: 36px 0;
 }
