@@ -268,47 +268,64 @@ input:focus {
   color: #000000;
 }
 
+/*как выровнять лэйблы по левому краю, а инпуты по правому?*/
+.hotel_search_form > label {
+	margin-right: 16px;
+}
 .date_field {
 	display: inline-block;
 	position: relative;
 }
 .date_icon {
 	position: absolute;
-	top: 14px;
-	right: 10px;
+	top: 8px;
+	right: 9px;
 	z-index: 1;
-	width: 10px;
-	height: 10px;
-	background-color: #000;
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -121px -75px;
 }
-
+.date_icon:hover {
+	background-position: -142px -75px;
+}
+.date_icon:active {
+	background-position: -163px -75px;
+}
 .plus_minus {
 	display: inline-block;
 	width: 49%;
 	font-size: 0;
 	text-align: right;
 }
-.plus_minus > input,
-.plus_minus > button {
+.lbl_adults {
+	margin-right: 38px;
+}
+.lbl_children {
+	margin-right: 26px;
+}
+.plus_minus input,
+.plus_minus button {
 	vertical-align: bottom;
 	width: 38px;
 	padding: 0;
 	font-size: 14px;
 }
-.plus_minus > input {
+.plus_minus label {
+	font-size: 14px;
+}
+.plus_minus input {
 	text-align: center;
 }
-.plus_minus > button {
+.plus_minus button {
 	color: #a9a9a9;
 }
-.plus_minus > button:hover {
+.plus_minus button:hover {
 	color: #000000;
 }
-.plus_minus > button:active {
+.plus_minus button:active {
 	color: #81b3d2;
-}
-.plus_minus > label {
-	font-size: 14px;
 }
 .form_btn {
 	margin-top: 54px;
