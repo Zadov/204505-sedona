@@ -219,6 +219,16 @@ input:focus {
 	/*background-image: url(../img/map.jpg);*/
 }
 /*сама форма*/
+.map_hide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 593px;
+}
+.map_hide_disable {
+	display: none;
+}
 .hotel_search_form {
 	position: absolute;
 	top: 0;
@@ -391,7 +401,7 @@ input:focus {
 	background-color: #5496bd;
 }
 .social_btn:active::before {
-	opacity: 0.4;
+	opacity: 0.3;
 }
 .social_btn::before {
 	content: "";
