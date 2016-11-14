@@ -215,8 +215,6 @@ input:focus {
 }
 .form_footer {
 	position: relative;
-	min-height: 500px;
-	/*background-image: url(../img/map.jpg);*/
 }
 /*сама форма*/
 .map_hide {
@@ -224,9 +222,9 @@ input:focus {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 593px;
+	height: 100%;
 }
-.map_hide_disable {
+.hide_block {
 	display: none;
 }
 .hotel_search_form {
@@ -359,9 +357,6 @@ input:focus {
 .form_btn:active {
 	background-color: #5496bd;
 	color: #94b9d2;
-}
-.hotel_search_form_hide {
-	display: none;
 }
 /*footer*/
 
