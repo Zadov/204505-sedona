@@ -16,6 +16,7 @@ input:focus {
   outline: none;
 }
 .container {
+	position: relative;
 	max-width: 1200px;
 	min-width: 768px;
 	margin: 0 auto;
@@ -601,7 +602,9 @@ input:focus {
 }
 
 /*found*/
-
+.found {
+	padding-bottom: 126px;
+}
 .found_header {
 	-ms-display: flex;
 			display: flex;
