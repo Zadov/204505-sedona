@@ -133,7 +133,6 @@ input:focus {
 			flex-wrap: wrap;
 }
 .reasons_block {
-	padding: 0 48px;
 	width: 33.333333%;
 	box-sizing: border-box;
 	line-height: 21px;
@@ -150,19 +149,34 @@ input:focus {
 	width: 66.666666%;
 	height: 256px;
 }
+.reasons_img img{
+	width: 100%;
+}
+/*как выровнять по вертикали голубой блок?*/
 .reasons_blue {
 	padding-top: 54px;
 	background-color: #81b3d2;
 	color: #ffffff;
 }
-.reasons_white {
-	min-height: 256px;
-	padding: 47px 62px 0;
-	background-color: #eeeeee;
-}
 .reasons_extra {
 	padding-top: 57px;
 	min-height: 330px;
+}
+.reasons_extra h2{
+	margin-top: 29px;
+	margin-bottom: 24px;
+}
+.reasons_blue p,
+.reasons_extra p {
+	padding: 0 12%;
+}
+.reasons_white {
+	min-height: 256px;
+	padding-top: 47px;
+	background-color: #eeeeee;
+}
+.reasons_white p{
+	padding: 0 15%;
 }
 .reasons_extra:before {
 	content: "";
@@ -180,10 +194,6 @@ input:focus {
 }
 .reasons_extra_img_souvenirs::before {
 	background-position: -150px 0;
-}
-.reasons_extra h2{
-	margin-top: 29px;
-	margin-bottom: 24px;
 }
 
 /*form*/
