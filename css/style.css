@@ -413,6 +413,7 @@ input:focus {
 	text-align: center;
 }
 .footer_tag {
+	margin-top: -8px;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -434,9 +435,6 @@ input:focus {
 .social_btn:active {
 	background-color: #5496bd;
 }
-.social_btn:active::before {
-	opacity: 0.3;
-}
 .social_btn::before {
 	content: "";
 	margin: 0 auto;
@@ -444,6 +442,9 @@ input:focus {
 	width: 20px;
 	height: 18px;
 	background: url(../img/sprite.png) no-repeat;
+}
+.social_btn:active::before {
+	opacity: 0.3;
 }
 .social_btn.tw::before {
 	background-position: -60px -75px;
@@ -461,9 +462,10 @@ input:focus {
 }
 .htmlacademy_logo {
 	display: inline-block;
-	vertical-align: middle;
+	margin-top: 5px;
 	width: 113px;
 	height: 39px;
+
 }
 .htmlacademy_logo:hover {
 	background: url(../img/html_academy_hvr.png) no-repeat 50% 50%;
@@ -494,8 +496,6 @@ input:focus {
 	border: none;
 }
 .filter legend {
-	margin: 0;
-	padding: 0;
 	margin-bottom: 25px;
 	font-size: 16px;
 	font-weight: bold;
@@ -503,7 +503,10 @@ input:focus {
 .filter_infrastructure,
 .filter_property_type {
 	float: left;
-	width: 24%
+	width: 195px;
+}
+.filter .filter_infrastructure {
+	margin-right: 6%;
 }
 .filter_item {
 	margin-bottom: 24px;
@@ -538,11 +541,9 @@ input:focus {
 .filter_price {
 	float: right;
 	width: 31%;
-	/*box-sizing: border-box;*/
 }
 .filter_price legend {
 	margin-bottom: 10px;
-
 }
 .filter_price_in {
 	position: relative;
@@ -629,18 +630,22 @@ input:focus {
 .pointer_end {
 	left: 79%;
 }
-.filter_price button {
+.show_btn {
 	display: block;
+	box-sizing: border-box;
 	width: 137px;
 	height: 36px;
 	margin: 0 auto;
+	padding-top: 6px;
 	background: none;
 	border: 2px solid #ffffff;
 	border-radius: 3px;
 	color: #ffffff;
 	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
-.filter_price button:hover {
+.show_btn:hover {
 	background-color: #ffffff;
 	color: #000000;
 }
