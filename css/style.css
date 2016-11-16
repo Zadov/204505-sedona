@@ -35,9 +35,10 @@ input:focus {
 }
 .intro {
 	position: relative;
-	background-image: url("../img/intro.jpg");
+	background-image: url("../img/intro_full.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
+	background-size: 100%;
 	height: 508px;
 	text-align: center;
 }
@@ -112,6 +113,8 @@ input:focus {
 /*причины*/
 
 .reasons {
+	position: relative;
+	z-index: 3;
 	margin-top: 60px;
 	text-align: center;
 }
@@ -200,9 +203,12 @@ input:focus {
 
 /*заголовок*/
 .interest {
-	margin-top: 56px;
+	padding-top: 31px;	/*margin-top: 56px;*/
 	text-align: center;
 	line-height: 24px;
+	position: relative;
+	z-index: 3;
+	background-color: #ffffff;
 }
 .interest h2 {
 	margin-bottom: 30px;
@@ -226,11 +232,17 @@ input:focus {
 .form_footer {
 	position: relative;
 }
+
 /*сама форма*/
+.form_footer iframe {
+	position: relative;
+	z-index: 1;
+}
 .map_hide {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
 }
@@ -241,6 +253,7 @@ input:focus {
 	position: absolute;
 	top: 0;
 	left: 50%;
+	z-index: 2;
 	transform: translateX(-50%);
 	width: 568px;
 	box-sizing: border-box;
@@ -249,6 +262,11 @@ input:focus {
 	font-weight: bold;
 	box-shadow: 0 7px 15px rgba(0,0,0,0.15);
 	text-align: right;
+	transition: top 0.5s ease-in-out;
+}
+.form_animate {
+	top: -394px;
+	transition: top 0.5s ease-in-out;
 }
 .hotel_search_form input {
 	font-weight: bold;
@@ -401,6 +419,7 @@ input:focus {
 
 .main_footer {
 	position: absolute;
+	z-index: 3;
 	-ms-display: flex;
 			display: flex;
 	bottom: 0;

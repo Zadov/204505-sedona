@@ -18,7 +18,7 @@ var map_hide = document.querySelector(".map_hide");
 if (search) {
 search.addEventListener("click", function(event) {
 	event.preventDefault();
-	form.classList.toggle("hide_block");
+	form.classList.toggle("form_animate");
 	map_hide.classList.toggle("hide_block");
 });
 };
