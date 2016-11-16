@@ -113,8 +113,6 @@ input:focus {
 /*причины*/
 
 .reasons {
-	position: relative;
-	z-index: 3;
 	margin-top: 60px;
 	text-align: center;
 }
@@ -151,9 +149,10 @@ input:focus {
 .reasons_img {
 	width: 66.666666%;
 	height: 256px;
+	overflow: hidden;
 }
 .reasons_img img{
-	width: 100%;
+	height: auto;
 }
 /*как выровнять по вертикали голубой блок?*/
 .reasons_blue {
@@ -206,9 +205,6 @@ input:focus {
 	padding-top: 31px;	/*margin-top: 56px;*/
 	text-align: center;
 	line-height: 24px;
-	position: relative;
-	z-index: 3;
-	background-color: #ffffff;
 }
 .interest h2 {
 	margin-bottom: 30px;
@@ -231,6 +227,7 @@ input:focus {
 }
 .form_footer {
 	position: relative;
+	overflow: hidden;
 }
 
 /*сама форма*/
