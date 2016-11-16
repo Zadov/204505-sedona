@@ -15,13 +15,30 @@ var search = document.querySelector(".search_btn");
 var form = document.querySelector(".hotel_search_form");
 var map_hide = document.querySelector(".map_hide");
 
+// если включен js, то добавляем классы, чтобы спрятать форму по умолчанию
+
+if (form) {
+	form.classList.add("form_animate");
+	map_hide.classList.add("hide_block");
+};
+
 if (search) {
-search.addEventListener("click", function(event) {
-	event.preventDefault();
-	form.classList.toggle("form_animate");
-	map_hide.classList.toggle("hide_block");
+	search.addEventListener("click", function(event) {
+		event.preventDefault();
+		form.classList.toggle("form_animate");
+		map_hide.classList.toggle("hide_block");
 });
 };
+
+// проверяем на наличие данных
+
+var date_in = document.querySelector("[name=date_in]");
+var date_out = document.querySelector("[name=date_out]");
+var adults = document.querySelector("[name=adults]");
+
+
+
+
 
 // отключаем переход по ссылке, если включен javascript
 

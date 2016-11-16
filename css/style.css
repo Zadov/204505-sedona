@@ -265,7 +265,7 @@ input:focus {
 	transition: top 0.5s ease-in-out;
 }
 .form_animate {
-	top: -394px;
+	top: -450px;
 	transition: top 0.5s ease-in-out;
 }
 .hotel_search_form input {
