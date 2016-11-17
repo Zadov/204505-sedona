@@ -309,8 +309,6 @@ input:focus {
 .hotel_search_form input:-moz-placeholder { /* Firefox 18- */
   color: #000000;
 }
-
-/*как выровнять лэйблы по левому краю, а инпуты по правому?*/
 .form_row  label {
 	float: left;
 	padding-top: 9px;
@@ -327,8 +325,10 @@ input:focus {
 	width: 21px;
 	height: 21px;
 	background-image: url(../img/sprite.png);
+	background-color: inherit;
 	background-repeat: no-repeat;
 	background-position: -121px -75px;
+	border: none;
 }
 .date_icon:hover {
 	background-position: -142px -75px;
