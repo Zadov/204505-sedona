@@ -147,16 +147,23 @@ input:focus {
 	margin-bottom: 20px;
 }
 .reasons_img {
+	position: relative;
 	width: 66.666666%;
 	height: 256px;
 	overflow: hidden;
 }
 .reasons_img img{
+	position: absolute;
+	top: 50%;
+	width: 100%;
 	height: auto;
+	transform: translate(-50%, -50%);
 }
 .reasons_blue {
-	display: flex;
-	align-items: center;
+	-ms-display: flex;
+			display: flex;
+	-ms-align-items: center;
+			align-items: center;
 	background-color: #81b3d2;
 	color: #ffffff;
 }
@@ -304,12 +311,13 @@ input:focus {
 }
 
 /*как выровнять лэйблы по левому краю, а инпуты по правому?*/
-.hotel_search_form > label {
-	margin-right: 16px;
+.form_row  label {
+	float: left;
+	padding-top: 9px;
 }
 .date_field {
-	display: inline-block;
 	position: relative;
+	float: right;
 }
 .date_icon {
 	position: absolute;
@@ -329,16 +337,17 @@ input:focus {
 	background-position: -163px -75px;
 }
 .plus_minus {
-	display: inline-block;
-	width: 49%;
+	width: 49.5%;
 	font-size: 0;
-	text-align: right;
 }
-.lbl_adults {
-	margin-right: 38px;
+.plus_minus:first-of-type{
+	float: left;
 }
-.lbl_children {
-	margin-right: 26px;
+.plus_minus:last-of-type{
+	float: right;
+}
+.plus_minus:last-of-type label{
+	margin-left: 48px;
 }
 .plus_minus input,
 .plus_minus button {
@@ -350,8 +359,8 @@ input:focus {
 .plus_minus button {
 	position: relative;
 }
-.btn_plus::before,
 .btn_minus::before,
+.btn_plus::before,
 .btn_plus::after {
 	content: "";
 	position: absolute;
@@ -360,9 +369,8 @@ input:focus {
 	left: 50%;
 	background-color: #a9a9a9;
 }
-.btn_plus::before,
 .btn_minus::before,
-.btn_plus::after {
+.btn_plus::before {
 	transform: translateX(-50%);
 }
 .btn_plus::after {
@@ -429,7 +437,8 @@ input:focus {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	align-self: center;
+	-ms-align-self: center;
+			align-self: center;
 }
 .social_btn {
 	display: inline-block;
@@ -515,10 +524,10 @@ input:focus {
 .filter_infrastructure,
 .filter_property_type {
 	float: left;
-	width: 195px;
+	width: 208px;
 }
 .filter .filter_infrastructure {
-	margin-right: 6%;
+	margin-right: 4.3%;
 }
 .filter_item {
 	margin-bottom: 24px;
@@ -553,6 +562,7 @@ input:focus {
 .filter_price {
 	float: right;
 	width: 31%;
+	min-width: 230px;
 }
 .filter_price legend {
 	margin-bottom: 10px;
@@ -735,21 +745,6 @@ input:focus {
 .filter_down.active_sort polygon {
 	fill: #81b3d2;
 }
-/*.filter_up {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #cccccc;
-
-}
-.filter_down {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid #cccccc;
-}*/
 
 /*Результаты поиска*/
 
