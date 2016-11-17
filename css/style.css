@@ -442,13 +442,14 @@ input:focus {
 }
 .social_btn {
 	display: inline-block;
+	position: relative;
 	margin-right: 2px;
 	width: 46px;
 	height: 48px;
 	font-size: 0;
 	background-color: #81b3d2;
 	box-sizing: border-box;
-	padding-top: 15px;
+	
 }
 .social_btn:hover {
 	background-color: #669ec0;
@@ -458,23 +459,30 @@ input:focus {
 }
 .social_btn::before {
 	content: "";
-	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: block;
-	width: 20px;
-	height: 18px;
 	background: url(../img/sprite.png) no-repeat;
 }
 .social_btn:active::before {
 	opacity: 0.3;
 }
 .social_btn.tw::before {
-	background-position: -60px -75px;
+	width: 17px;
+	height: 15px;
+	background-position: -62px -78px;
 }
 .social_btn.fb::before {
-	background-position: -80px -75px;
+	width: 10px;
+	height: 19px;
+	background-position: -84px -76px;
 }
 .social_btn.yt::before {
-	background-position: -100px -75px;
+	width: 20px;
+	height: 16px;
+	background-position: -100px -78px;
 }
 .footer_copyright p {
 	display: inline-block;
