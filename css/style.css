@@ -129,8 +129,8 @@ input:focus {
 }
 .reasons_blocks {
 	margin-top: 53px;
-	-ms-display: flex;
-			display: flex;
+	display: flex;
+	display: -ms-flexbox;
 	-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 }
@@ -155,10 +155,11 @@ input:focus {
 }
 .reasons_img img{
 	position: absolute;
+	left: 0;
 	top: 50%;
 	width: 100%;
 	height: auto;
-	transform: translate(-50%, -50%);
+	transform: translateY(-50%);
 }
 .reasons_blue {
 	display: -ms-flexbox;
