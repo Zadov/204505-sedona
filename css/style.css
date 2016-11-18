@@ -36,6 +36,7 @@ input:focus {
 .intro {
 	position: relative;
 	background-image: url("../img/intro_full.jpg");
+	background-color: #f2f2f2;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100%;
@@ -160,10 +161,10 @@ input:focus {
 	transform: translate(-50%, -50%);
 }
 .reasons_blue {
-	-ms-display: flex;
-			display: flex;
-	-ms-align-items: center;
-			align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+		 align-items: center;
 	background-color: #81b3d2;
 	color: #ffffff;
 }
@@ -210,7 +211,7 @@ input:focus {
 
 /*заголовок*/
 .interest {
-	padding-top: 31px;	/*margin-top: 56px;*/
+	margin-top: 56px;/*padding-top: 31px;*/
 	text-align: center;
 	line-height: 24px;
 }
@@ -237,6 +238,7 @@ input:focus {
 	position: relative;
 	overflow: hidden;
 	background: url(../img/map.jpg) no-repeat center;
+	height: 593px;
 }
 
 /*сама форма*/
@@ -329,6 +331,7 @@ input:focus {
 	background-repeat: no-repeat;
 	background-position: -121px -75px;
 	border: none;
+	cursor: pointer;
 }
 .date_icon:hover {
 	background-position: -142px -75px;
@@ -421,35 +424,38 @@ input:focus {
 
 .main_footer {
 	position: absolute;
-	-ms-display: flex;
-			display: flex;
+	display: -ms-flexbox;
+	display: flex;
 	bottom: 0;
 	width: 100%;
-	background-color: rgba(255,255,255,0.9);
 	padding: 36px 0;
+	background-color: rgba(255,255,255,0.9);
+	font-size: 0;
 }
 .main_footer div {
 	width: 33.333333%;
 	text-align: center;
 }
 .footer_tag {
-	margin-top: -8px;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	-ms-align-self: center;
-			align-self: center;
+	-ms-flex-item-align: center;
+	 -ms-grid-row-align: center;
+					 align-self: center;
 }
 .social_btn {
 	display: inline-block;
 	position: relative;
-	margin-right: 2px;
+	margin-right: 6px;
 	width: 46px;
 	height: 48px;
-	font-size: 0;
+	vertical-align: middle;
 	background-color: #81b3d2;
 	box-sizing: border-box;
-	
+}
+.social_btn:last-child {
+	margin-right: 0;
 }
 .social_btn:hover {
 	background-color: #669ec0;
@@ -486,15 +492,15 @@ input:focus {
 }
 .footer_copyright p {
 	display: inline-block;
-	margin-right: 5px;
-	vertical-align: top;
+	margin-right: 8px;
+	vertical-align: middle;
+	font-size: 14px;
 }
 .htmlacademy_logo {
 	display: inline-block;
-	margin-top: 5px;
 	width: 113px;
 	height: 39px;
-
+	vertical-align: middle;
 }
 .htmlacademy_logo:hover {
 	background: url(../img/html_academy_hvr.png) no-repeat 50% 50%;
@@ -516,6 +522,7 @@ input:focus {
 	padding: 27px 6% 33px;
 	background-image: url(../img/hotel_intro.jpg);
 	background-position: center;
+	background-color: #687785;
 	box-sizing: border-box;
 	color: #ffffff;
 }
@@ -685,10 +692,10 @@ input:focus {
 	padding-bottom: 126px;
 }
 .found_header {
-	-ms-display: flex;
-			display: flex;
-	-ms-align-items: center;
-			align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+		 align-items: center;
 	padding: 30px 6%;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -704,8 +711,8 @@ input:focus {
 	padding: 0;
 	list-style-type: none;
 	font-size: 12px;
-	-ms-flex-grow: 1;
-			flex-grow: 1;
+	-ms-flex-positive: 1;
+					flex-grow: 1;
 }
 .found_sorting li {
 	float: left;
@@ -785,8 +792,8 @@ input:focus {
 	color: #cacaca;
 }
 .found_body_hotel_block {
-	-ms-display: flex;
-			display: flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 .found_body_hotel_about {
 	width: 110px;
@@ -830,7 +837,7 @@ input:focus {
 }
 .found_stars {
 	text-align: right;
-	margin-bottom: 35px;
+	margin-bottom: 42px;
 	font-size: 0;
 }
 .star {
@@ -839,6 +846,7 @@ input:focus {
 	margin-left: 7px;
 	width: 17px;
 	height: 17px;
+	vertical-align: top;
 }
 .star:first-child {
 	margin: 0;
