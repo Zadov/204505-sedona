@@ -13,7 +13,7 @@ body {
 }
 button:focus,
 input:focus {
-  outline: none;
+	outline: none;
 }
 .container {
 	position: relative;
@@ -30,6 +30,7 @@ input:focus {
 }
 
 /*header*/
+
 .main_header {
 	position: relative;
 }
@@ -58,7 +59,6 @@ input:focus {
 	width: 100%;
 	height: 57px;
 }
-
 .main_nav {
 	position: relative;
 	background-color: #ffffff;
@@ -208,11 +208,10 @@ input:focus {
 	background-position: -150px 0;
 }
 
-/*form*/
+/*заголовок формы*/
 
-/*заголовок*/
 .interest {
-	margin-top: 56px;/*padding-top: 31px;*/
+	margin-top: 56px;
 	text-align: center;
 	line-height: 24px;
 }
@@ -298,16 +297,16 @@ input:focus {
 	padding-left: 13px;
 }
 .hotel_search_form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #000000;
+	color: #000000;
 }
 .hotel_search_form input::-moz-placeholder { /* Firefox 19+ */
-  color: #000000;
+	color: #000000;
 }
 .hotel_search_form input:-ms-input-placeholder { /* IE 10+ */
-  color: #000000;
+	color: #000000;
 }
 .hotel_search_form input:-moz-placeholder { /* Firefox 18- */
-  color: #000000;
+	color: #000000;
 }
 .form_row  label {
 	float: left;
@@ -360,22 +359,11 @@ input:focus {
 .plus_minus button {
 	position: relative;
 }
-.btn_minus::before,
-.btn_plus::before,
-.btn_plus::after {
-	content: "";
+.plus_minus svg {
 	position: absolute;
-	width: 11px;
-	height: 3px;
 	left: 50%;
-	background-color: #a9a9a9;
-}
-.btn_minus::before,
-.btn_plus::before {
-	transform: translateX(-50%);
-}
-.btn_plus::after {
-	transform: translateX(-50%) rotate(90deg);
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 .plus_minus button:hover::before,
 .plus_minus button:hover::after {
@@ -418,6 +406,7 @@ input:focus {
 	background-color: #5496bd;
 	color: #94b9d2;
 }
+
 /*footer*/
 
 .main_footer {
@@ -512,9 +501,9 @@ input:focus {
 	visibility: hidden;
 }
 
-/*hotels*/
+/* ==== отели ==== */
 
-	/*filter*/
+/*фильтр отелей*/
 
 .filter {
 	padding: 27px 6% 33px;
@@ -571,7 +560,15 @@ input:focus {
 .filter_item input[type="checkbox"]:checked + label::before {
 	background-position: -5px -75px;
 }
+.filter_item input[type="checkbox"]:disabled + label::before {
+	background-position: -184px -75px;
+}
+.filter_item input[type="checkbox"]:checked:disabled + label::before {
+	background-position: -210px -75px;
+}
+
 /*фильтр цены*/
+
 .filter_price {
 	float: right;
 	width: 31%;
@@ -607,7 +604,6 @@ input:focus {
 	line-height: 30px;
 	vertical-align: top;
 }
-
 .filter_price input {
 	width: 50%;
 	margin: 0;
@@ -685,7 +681,8 @@ input:focus {
 	color: #000000;
 }
 
-/*found*/
+/*Шапка результаты поиска*/
+
 .found {
 	padding-bottom: 126px;
 }

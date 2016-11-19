@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Sedona</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>Sedona</title>
+	</head>
+	<body>
   	<div class="container">
 	  	<!-- Заголовок с фоновой картинкой intro -->
 			<header class="main_header">
@@ -22,9 +22,7 @@
 				</nav>
 				<!-- Логотип -->
 				<div class="logo">
-					<a href="index.html">
-						<img src="img/logo.png" alt="Sedona" width="138" height="70">
-					</a>
+					<img src="img/logo.png" alt="Sedona" width="138" height="70">
 				</div>
 			</header>
 			<!-- Картинка с текстом и треугольниками -->
@@ -130,24 +128,30 @@
 					<div class="form_row clearfix">
 						<div class="plus_minus">
 							<label class="lbl_adults" for="adults">Взрослые:</label>
-							<button class="btn_minus" type="button"></button>
+							<button class="btn_minus" type="button">
+								<svg width="12" height="4"><rect width="11" height="3" fill="#a9a9a9"/></svg>
+							</button>
 							<input type="text" name="adults" id="adults" placeholder="2">
-							<button class="btn_plus" type="button"></button>
+							<button class="btn_plus" type="button">
+								<svg width="12" height="12"><polygon points="4,0 7,0 7,4 11,4 11,7 7,7 7,11 4,11 4,7 0,7 0,4 4,4" fill="#a9a9a9" /></svg>
+							</button>
 						</div>
 
 						<div class="plus_minus">
 							<label class="lbl_children" for="children">Дети:</label>
-							<button class="btn_minus" type="button"></button>
+							<button class="btn_minus" type="button">
+								<svg width="12" height="4"><rect width="11" height="3" fill="#a9a9a9"/></svg>
+							</button>
 							<input type="text" name="children" id="children" placeholder="0">
-							<button class="btn_plus" type="button"></button>
+							<button class="btn_plus" type="button">
+								<svg width="12" height="12"><polygon points="4,0 7,0 7,4 11,4 11,7 7,7 7,11 4,11 4,7 0,7 0,4 4,4" fill="#a9a9a9" /></svg>
+							</button>
 						</div>
 					</div>
 
 					<button type="submit" class="form_btn">Найти</button>
 				</form>
 				
-
-
 				<footer class="main_footer">
 					<div class="footer_tag">
 						<b>#visitsedona</b>
@@ -167,6 +171,6 @@
 			</div>
 		</div>
 		<script src="js/script.min.js"></script>
-  </body>
+	</body>
 </html>
 
