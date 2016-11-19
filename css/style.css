@@ -290,10 +290,7 @@ input:focus {
 }
 .hotel_search_form input:focus {
 	background: none;
-	border: 2px solid #e5e5e5;
-}
-.date_field input:focus {
-	padding-left: 11px;
+	outline: 2px solid #e5e5e5;
 }
 .date_field input {
 	width: 346px;
