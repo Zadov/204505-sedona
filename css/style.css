@@ -365,6 +365,14 @@ input:focus {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+.btn_minus:hover rect,
+.btn_plus:hover polygon {
+	fill: #000000;
+}
+.btn_minus:active rect,
+.btn_plus:active polygon {
+	fill: #81b3d2;
+}
 .plus_minus button:hover::before,
 .plus_minus button:hover::after {
 	background-color: #000000;
