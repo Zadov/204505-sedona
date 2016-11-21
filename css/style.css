@@ -53,7 +53,7 @@ input:focus {
 	left: 0;
 	content: "";
 	background-image: url(../img/mask.png);
-	background-repeat:  no-repeat;
+	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 100% auto;
 	width: 100%;
@@ -308,7 +308,7 @@ input:focus {
 .hotel_search_form input:-moz-placeholder { /* Firefox 18- */
 	color: #000000;
 }
-.form_row  label {
+.form_row label {
 	float: left;
 	padding-top: 9px;
 }
@@ -620,16 +620,16 @@ input:focus {
 	background: none;
 }
 .filter_price input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ffffff;
+	color: #ffffff;
 }
 .filter_price input::-moz-placeholder { /* Firefox 19+ */
-  color: #ffffff;
+	color: #ffffff;
 }
-.filter_price input:-ms-input-placeholder { /* IE 10+ */
-  color: #ffffff;
+	.filter_price input:-ms-input-placeholder { /* IE 10+ */
+	color: #ffffff;
 }
-.filter_price input:-moz-placeholder { /* Firefox 18- */
-  color: #ffffff;
+	.filter_price input:-moz-placeholder { /* Firefox 18- */
+	color: #ffffff;
 }
 .filter_price_line {
 	position: relative;
