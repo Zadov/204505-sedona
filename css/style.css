@@ -31,9 +31,6 @@ input:focus {
 
 /*header*/
 
-.main_header {
-	position: relative;
-}
 .intro {
 	position: relative;
 	background-image: url("../img/intro_full.jpg");
@@ -60,7 +57,7 @@ input:focus {
 	height: 57px;
 }
 .main_nav {
-	position: relative;
+	/*position: relative;*/
 	background-color: #ffffff;
 }
 .main_nav ul {
@@ -135,7 +132,8 @@ input:focus {
 			flex-wrap: wrap;
 }
 .reasons_block {
-	width: 33.333333%;
+	/*width: 33.333333%;*/
+	flex-basis: 33.333333%;
 	box-sizing: border-box;
 	line-height: 21px;
 }
@@ -149,7 +147,8 @@ input:focus {
 }
 .reasons_img {
 	position: relative;
-	width: 66.666666%;
+	/*width: 66.666666%;*/
+	flex-basis: 66.666666%;
 	height: 256px;
 	overflow: hidden;
 }

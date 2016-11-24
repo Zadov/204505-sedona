@@ -4,10 +4,23 @@
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/site_list.css">
 		<title>Sedona</title>
 	</head>
 	<body>
+		<!-- Блок со списком сайтов -->
+		<div class="site_list">
+			<button class="open_site_list"><span class="line"></span></button>
+			<a href="http://myawesomesite.ru/" class="home_link">Home</a>
+			<ul>
+				<li><a href="../sedona/index.html">Sedona</a></li>
+				<li><a href="nerds/index.html">Nerds</a></li>
+				<li><a href="gllacy/index.html">Gllacy</a></li>
+				<li><a href="device/index.html">Device</a></li>
+			</ul>
+		</div>
+
 		<div class="container">
 			<!-- Заголовок с фоновой картинкой intro -->
 			<header class="main_header">
@@ -19,11 +32,11 @@
 						<li><a href="hotels.html">Гостиницы</a></li>
 						<li><a href="#">Карта штата</a></li>
 					</ul>
+					<!-- Логотип -->
+					<div class="logo">
+						<img src="img/logo.png" alt="Sedona" width="138" height="70">
+					</div>
 				</nav>
-				<!-- Логотип -->
-				<div class="logo">
-					<img src="img/logo.png" alt="Sedona" width="138" height="70">
-				</div>
 			</header>
 			<!-- Картинка с текстом и треугольниками -->
 			<div class="intro">
@@ -171,6 +184,7 @@
 			</div>
 		</div>
 		<script src="js/script.min.js"></script>
-	</body>
+		<script src="js/site_list.js"></script>
+		</body>
 </html>
 
